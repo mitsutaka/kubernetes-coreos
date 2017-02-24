@@ -4,7 +4,7 @@ Configuration is based on https://coreos.com/kubernetes/docs/latest
 
 # Expected system
 - Tested with VMWare Guestinfo Interface (https://coreos.com/os/docs/latest/vmware-guestinfo.html)
-- Service is exposed by nodePort + External NAT(Test with pfSense)
+- Service is exposed by nodePort + External NAT or HA Proxy(Tested with pfSense)
 - Kuberenetes nodes are connected by http instead of https
 - 5 CoreOS, 1 Master, 4 Nodes
  - 172.16.0.100 (node-100, master)
